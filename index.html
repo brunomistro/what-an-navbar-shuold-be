@@ -1,129 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>That's all folks!</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			text-decoration: none;
-			box-sizing: border-box;
-		}
+  <body class="">
+    <nav class="">
+      <input type="checkbox" class="" />
+      <label for="sidebar-active" class="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32"
+          viewBox="0 -960 960 960"
+          width="32"
+          fill=""
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
+      <label id="overlay" for="sidebar-active"></label>
 
-		body {
-			background-color: lightgrey;
-		}
+      <div class="">
+        <label for="sidebar-active" class="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            viewBox="0 -960 960 960"
+            width="32"
+            fill=""
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
 
-		.hamburger-icon {
-			display: none;
-		}
+        <a class="mr-auto" href="#1">Home</a>
+        <a href="#2">About</a>
+        <a href="#3">Products</a>
+        <a href="#4">Blog</a>
+        <a href="#5">Login</a>
+      </div>
+    </nav>
 
-		header {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 10px 20px;
-			background-color: darkslateblue;
-		}
-
-		.logo-text {
-			color: white;
-		}
-
-		.hamburger-icon {
-			border: none;
-			background-color: transparent;
-		}
-
-		.hamburger-icon .fa-bars,
-		.hamburger-icon .fa-x {
-			color: white;
-			font-size: 1rem;
-			cursor: pointer;
-		}
-
-		.hamburger-icon input[type="checkbox"] {
-			appearance: none;
-		}
-
-		.navigation {
-			display: flex;
-			gap: 1rem;
-		}
-
-		.navigation a {
-			color: white
-		}
-
-
-		@media screen and (max-width: 600px) {
-			header {
-				display: block;
-			}
-
-			.navigation {
-				height: 0;
-				overflow: hidden;
-				flex-direction: column;
-				align-items: center;
-				transition: all 0.5s ease-in-out;
-			}
-
-			.logo {
-				display: flex;
-				justify-content: space-between;
-			}
-
-			.hamburger-icon {
-				display: block;
-			}
-
-			.fa-x {
-				display: none;
-			}
-
-			header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
-				margin-top: 1rem;
-				height: 100px;
-			}
-
-			header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
-				display: none;
-			}
-
-			header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
-				display: inline-block;
-			}
-		}
-	</style>
-</head>
-
-<body>
-	<header>
-		<div class="logo">
-			<h1 class="logo-text">LOGO</h1>
-			<button class="hamburger-icon">
-				<label for="dropdown">
-					<i class="fa-solid fa-bars"></i>
-					<i class="fa-solid fa-x"></i>
-				</label>
-				<input type="checkbox" id="dropdown" />
-			</button>
-		</div>
-		<ul class="navigation">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</header>
-</body>
-
+    <h1>Homepage</h1>
+  </body>
 </html>
